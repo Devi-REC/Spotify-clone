@@ -1,0 +1,76 @@
+.spotify-header img{
+    object-fit: contain;
+    height:50px;
+}
+/* SpotifyHeader.css */
+.spotify-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .spotify-header__left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .spotify-header__logo {
+    height: 40px;
+    object-fit: contain;
+    margin-right: 20px;
+  }
+  
+  .spotify-header__search {
+    display: flex;
+    align-items: center;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    padding: 5px;
+    margin-top: 5px;
+  }
+  
+  .spotify-header__search input {
+    border: none;
+    background: transparent;
+    color: #fff;
+    margin-left: 10px;
+    outline-width: 0;
+  }
+  
+  .spotify-header__center {
+    display: flex;
+    align-items: center;
+  }
+  
+  .spotify-header__option {
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  .spotify-header__option:hover{
+    background-color: #ffffffa9;
+    border-radius: 5px;
+    border-bottom: none;
+  }
+  
+  .spotify-header__option--active {
+    color: #1ed15e;
+  }
+  
+  .spotify-header__right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .spotify-header__user-info {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .spotify-header__user-info h4 {
+    margin-left: 10px;
+    color: #fff; /* Set the color to white */
+  }
+  

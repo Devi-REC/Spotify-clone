@@ -1,0 +1,70 @@
+/* Sample CSS Styles for Feed Component */
+.feed {
+  padding: 30px;
+  height: 100%; /* Set a fixed height for the feed */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent items from wrapping to the next line */
+}
+
+.songs {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+   /* Allow items to wrap to the next line */
+}
+
+.feed-item {
+  width: 100%; /* Ensure each feed item takes the full width on smaller screens */
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  
+
+}
+.feed-item__info h3{
+  color: white;
+  box-shadow: 0.50px 0.50px 6px 0.45px rgba(32, 249, 32, 0.738);
+}
+.feed-artist__image:hover{
+  transform: scale(1.07);
+}
+
+.feed-item__image {
+  width: 400px;
+  height: 230px;
+  background-size: cover;
+   box-shadow: 0.50px 6px 17px 0.75px rgba(15, 243, 19, 0.738);
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.feed-artist__image {
+  width: 100%;
+  max-width: 150px; /* Ensure the artist image doesn't exceed a certain width */
+  height: auto;
+  object-fit: cover;
+  box-shadow: 0.50px 6px 17px 0.75px rgba(14, 200, 17, 0.738);
+}
+.feed-item__image:hover{
+  transform: scale(1.07);
+}
+
+.current-song {
+  margin-top: 50px;
+
+  font-size: 16px;
+  color: #1ed15e
+  ;
+}
+
+/* Add media queries for responsiveness */
+@media only screen and (min-width: 768px) {
+  .feed-item {
+      width: calc(50% - 20px); /* Two items per row with some margin */
+      margin-right: 20px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .feed-item {
+      width: calc(33.333% - 20px); /* Three items per row with some margin */
+  }
+}

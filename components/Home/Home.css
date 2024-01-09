@@ -1,0 +1,5 @@
+.app_body{
+    display:flex;
+    background-color: black;
+    justify-content: space-between;
+}

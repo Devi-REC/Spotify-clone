@@ -1,0 +1,52 @@
+.Login{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: black;
+    text-align: center;
+  padding: 20px;
+  gap: 10px; 
+}
+@keyframes logoAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.Login_logo img {
+    width: 700px;
+    height: 300px;
+    background-size: cover;
+    box-shadow: 0.5px 6px 17px 0.75px rgba(15, 243, 19, 0.738);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    animation: logoAnimation 0.3s infinite; /* Adjust the duration as needed */
+}
+.Login button{
+    width: 250px;
+    height: 70px;
+    background-color:#0ed353;
+    color:rgba(13, 13, 12, 0.977);
+    box-shadow: 0.50px 6px 17px 0.75px rgba(15, 243, 19, 0.738);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size:30px;
+    
+}
+.Login_logo {
+    margin-bottom: 20px;
+    display: flex;
+  }
+.Login button:hover{
+    background-color: rgb(4, 4, 4);
+    color: rgba(27, 186, 86, 0.896) ;
+    border: 1px solid rgba(30, 208, 95, 0.896);
+}
+
+
